@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func greet(l string) string{
+   switch l{
+   case "english":
+     return "This is english"
+   case "hindi":
+     return "This is hindi"
+   case "marathi":
+     return "This is Marathi"
+}
+    return "Hello World!"
+
+}
+
+func main(){
+   msgEn := greet("english")
+   fmt.Println(msgEn)
+   msgHindi := greet("hindi")
+   fmt.Println(msgHindi)
+   msgMarathi := greet("marathi")
+   fmt.Println(msgMarathi)
+   
+}

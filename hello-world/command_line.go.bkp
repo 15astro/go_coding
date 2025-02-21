@@ -1,0 +1,22 @@
+package main
+
+import {
+
+"fmt"
+"os"
+
+}
+
+func main(){
+
+argsWithProg := os.Args
+argsWithoutProg := os.Args[1:]
+
+org := os.Args[3]
+
+fmt.Prinln(argsWithProg)
+fmt.Prinln(argsWithoutProg)
+fmt.Prinln(arg)
+
+
+}
