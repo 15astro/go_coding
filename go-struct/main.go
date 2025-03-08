@@ -20,6 +20,12 @@ func NewBankAccont(name string, balance int64) (*BankAccount, error){
 	Balance: balance,
  }, nil 
 }
+
+func (b *BankAccount) Deposit(amount int64){
+	b.Balance += amount
+	fmt.Println(b.Balance)
+}
+
 func main(){
     newAccount, err := NewBankAccont("Atish",2000)
 	if err != nil {
@@ -27,6 +33,8 @@ func main(){
 		os.Exit(1)
 	}
 	fmt.Println(newAccount)
+	newAccount.Deposit(1000)
+	fmt.Println(newAccount.Balance)
 	//fmt.Println(NewBankAccont("Atish",2000)
 }
 
